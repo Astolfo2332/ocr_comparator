@@ -2,8 +2,8 @@ from transformers import AutoProcessor
 from transformers import HunYuanVLForConditionalGeneration
 from PIL import Image
 import torch
-from tests.llm_ocr_models.base_ocr_model import BaseOcrModel
-from tests.cost_manager.all_cost_manager import cost_manager
+from src.scripts.utils.llm_ocr_models.base_ocr_model import BaseOcrModel
+from src.scripts.utils.cost_manager.all_cost_manager import cost_manager
 
 def clean_repeated_substrings(text):
     """Clean repeated substrings in text"""

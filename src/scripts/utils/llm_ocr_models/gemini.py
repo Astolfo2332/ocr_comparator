@@ -4,8 +4,8 @@ from langchain.messages import HumanMessage
 from pydantic import BaseModel
 
 from scripts.utils.prompts.prompts import user_extraction_prompt, system_prompt
-from tests.cost_manager.all_cost_manager import cost_manager
-from tests.llm_ocr_models.base_ocr_model import BaseOcrModel
+from src.scripts.utils.cost_manager.all_cost_manager import cost_manager
+from src.scripts.utils.llm_ocr_models.base_ocr_model import BaseOcrModel
 import base64
 
 from tenacity import retry, wait_fixed, stop_after_attempt

@@ -1,7 +1,7 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 from scripts.data_models.invoices import Invoice
-from tests.llm_extraction_models.base_extractor import BaseExtractor
+from src.scripts.utils.llm_extraction_models.base_extractor import BaseExtractor
 
 
 class GeminiExtractor(BaseExtractor):

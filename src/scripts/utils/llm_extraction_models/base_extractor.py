@@ -1,6 +1,6 @@
 from langchain_core.exceptions import OutputParserException
 
-from scripts.utils.prompts.prompts import (system_prompt,
+from src.scripts.utils.prompts.prompts import (system_prompt,
                                            user_extraction_prompt,
                                            system_prompt_json,
                                            user_extraction_prompt_json)
@@ -9,7 +9,7 @@ import json
 
 from langchain_community.callbacks.manager import get_openai_callback
 
-from src.tests.cost_manager.all_cost_manager import cost_manager
+from src.scripts.utils.cost_manager.all_cost_manager import cost_manager
 
 class BaseExtractor:
     def __init__(self):

@@ -7,8 +7,8 @@ from PIL import Image
 from langchain_community.callbacks.manager import get_openai_callback
 from scripts.utils.pdf_loader import convert_img_to_bytes
 from scripts.utils.prompts.prompts import system_prompt, user_extraction_prompt, user_ocr_prompt
-from tests.cost_manager.all_cost_manager import cost_manager
-from tests.llm_ocr_models.base_ocr_model import BaseOcrModel
+from src.scripts.utils.cost_manager.all_cost_manager import cost_manager
+from src.scripts.utils.llm_ocr_models.base_ocr_model import BaseOcrModel
 
 
 class OpenAIManager(BaseOcrModel):

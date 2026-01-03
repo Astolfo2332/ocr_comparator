@@ -1,4 +1,4 @@
-from tests.llm_extraction_models.base_extractor import BaseExtractor
+from src.scripts.utils.llm_extraction_models.base_extractor import BaseExtractor
 from langchain_ollama import ChatOllama
 from scripts.data_models.invoices import Invoice
 

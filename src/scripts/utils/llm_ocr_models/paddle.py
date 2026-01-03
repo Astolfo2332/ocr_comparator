@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from tests.llm_ocr_models.base_ocr_model import BaseOcrModel
+from src.scripts.utils.llm_ocr_models.base_ocr_model import BaseOcrModel
 from transformers import AutoModelForCausalLM, AutoProcessor
 from PIL import Image
 

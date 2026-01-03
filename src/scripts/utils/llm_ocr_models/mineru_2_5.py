@@ -2,8 +2,8 @@ from transformers import AutoProcessor, Qwen2VLForConditionalGeneration
 from PIL import Image
 from mineru_vl_utils import MinerUClient
 
-from tests.cost_manager.all_cost_manager import cost_manager
-from tests.llm_ocr_models.base_ocr_model import BaseOcrModel, calculate_tokens
+from src.scripts.utils.cost_manager.all_cost_manager import cost_manager
+from src.scripts.utils.llm_ocr_models.base_ocr_model import BaseOcrModel, calculate_tokens
 
 
 class MineruManager(BaseOcrModel):

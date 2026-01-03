@@ -1,7 +1,7 @@
 import subprocess
-from tests.llm_ocr_models.base_ocr_model import (BaseOcrModel,
+from src.scripts.utils.llm_ocr_models.base_ocr_model import (BaseOcrModel,
                                                  calculate_tokens)
-from tests.cost_manager.all_cost_manager import cost_manager
+from src.scripts.utils.cost_manager.all_cost_manager import cost_manager
 
 class DeepseekOllamaManager(BaseOcrModel):
     def __init__(self):

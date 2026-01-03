@@ -2,8 +2,8 @@ from transformers import AutoModelForImageTextToText, AutoTokenizer, AutoProcess
 from PIL import Image
 import os
 
-from tests.cost_manager.all_cost_manager import cost_manager
-from tests.llm_ocr_models.base_ocr_model import BaseOcrModel
+from src.scripts.utils.cost_manager.all_cost_manager import cost_manager
+from src.scripts.utils.llm_ocr_models.base_ocr_model import BaseOcrModel
 
 os.environ["TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL"] = "1"
 

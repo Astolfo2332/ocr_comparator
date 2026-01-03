@@ -9,11 +9,11 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama import OllamaLLM
 from PIL import Image
 from src.scripts.utils.pdf_loader import convert_img_to_bytes
-from tests.llm_ocr_models.base_ocr_model import BaseOcrModel, calculate_tokens
+from src.scripts.utils.llm_ocr_models.base_ocr_model import BaseOcrModel, calculate_tokens
 from transformers import Qwen3VLForConditionalGeneration
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
 from qwen_vl_utils import process_vision_info
-from src.tests.cost_manager.all_cost_manager import cost_manager
+from src.scripts.utils.cost_manager.all_cost_manager import cost_manager
 
 from pydantic import BaseModel
 
